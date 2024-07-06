@@ -63,25 +63,25 @@ HomeFinder is a platform designed to link landlords and tenants in Nairobi. The 
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/homefinder.git
-   cd homefinder/frontend```
+   cd homefinder/frontend
 
 2. Install dependencies:
 
    ```sh
-   npm install```
+   npm install
 
 3. Start the development server:
 
    ```sh
-   npm start```
+   npm start
 
 
 ### Backend
 1. Clone the repository:
 
    ```sh
-git clone https://github.com/yourusername/homefinder.git
-cd homefinder/backend```
+   git clone https://github.com/yourusername/homefinder.git
+   cd homefinder/backend
 
 2. Create a virtual environment and activate it:
 
@@ -97,27 +97,27 @@ cd homefinder/backend```
 4. Configure the database in settings.py:
 
    ```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'keja_finder',
-        'USER': 'your_mysql_user',
-        'PASSWORD': 'your_mysql_password',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}```
+     DATABASES = {
+      'default': {
+          'ENGINE': 'django.db.backends.mysql',
+          'NAME': 'keja_finder',
+          'USER': 'your_mysql_user',
+          'PASSWORD': 'your_mysql_password',
+          'HOST': 'localhost',
+          'PORT': '3306',
+       }
+   }
 
 5. Apply migrations:
 
    ```sh
    python manage.py makemigrations
-   python manage.py migrate```
+   python manage.py migrate
 
 6. Start the development server:
 
    ```sh
-   python manage.py runserver```
+   python manage.py runserver
 
 ###  Database
 
@@ -126,7 +126,7 @@ DATABASES = {
    CREATE DATABASE Homefinder;
    CREATE USER 'your_mysql_user'@'localhost' IDENTIFIED BY 'your_mysql_password';
    GRANT ALL PRIVILEGES ON keja_finder.* TO 'your_mysql_user'@'localhost';
-   FLUSH PRIVILEGES;```
+   FLUSH PRIVILEGES;
 
 ### Real-time Communication
 
@@ -135,9 +135,7 @@ DATABASES = {
 Example setup (Node.js):
 
 ```sh
-npm install socket.io```
-
-Integration example:
+npm install socket.io
 
 ```javascript
 const io = require('socket.io')(server);
@@ -152,7 +150,7 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log('User disconnected');
     });
-});```
+});
 
 ### Contributing
 Contributions are welcome! Please create an issue or submit a pull request for any changes.
